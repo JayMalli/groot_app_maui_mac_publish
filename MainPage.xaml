@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Groot_App_Maui.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="groot_img.jpg"
+                SemanticProperties.Description="Cute groot waving hi to you!"
+                HeightRequest="400"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="I am Groot!"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Button
+              FontAttributes="Bold"  
+              Text="Click Me"  
+              FontSize="{OnPlatform WinUI=16, MacCatalyst=18}"
+              HorizontalOptions="Center"
+              Clicked="OnClickBtn"  
+             />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
